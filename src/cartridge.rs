@@ -21,6 +21,7 @@ struct Flags6 {
 struct CartridgeHeader {
     prg_size: u8,
     chr_size: Option<u8>,
+    mapper: u8,
     flag6: Flags6
 }
 
@@ -65,6 +66,7 @@ pub fn read_file(path: &str) -> Result<Cartridge, Box<dyn Error + 'static>> {
                 Some(0) | None => None,
                 _ => Some(file[5])
             },
+            mapper,
             flag6: Flags6 {
                 mirroring: match f6[0] {
                     false => MirroringMode::Horizontal,
