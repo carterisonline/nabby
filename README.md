@@ -1,5 +1,5 @@
-# About __rusty16__
-rusty16 is a __Work in progress, partial implementation__ of the [chip16 spec](https://github.com/chip16/chip16).
+# About __nabby__
+nabby is a __Work in progress, partial implementation__ of the [NES spec](http://wiki.nesdev.com/w/index.php/NES_reference_guide).
 
 ## Instructions implemented:
 
