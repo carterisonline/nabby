@@ -1,2 +1,5 @@
 /target
 Cargo.lock
+
+# Download from https://github.com/christopherpow/nes-test-roms
+nes-test-roms
